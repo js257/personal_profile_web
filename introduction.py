@@ -15,12 +15,13 @@ with st.sidebar:
     st.markdown("### Education")
     st.markdown("""
     - Bachelor (2021): Panzhihua University, Electronic Information Engineering  
-    - Master (Ongoing): Central South University of Forestry and Technology, School of Computer and Information Engineering
+    - Master (2024): Central South University of Forestry and Technology, School of Computer and Information Engineering
+    - Ph.D. (Ongoing): National University of Defense Technology, School of Computer Science
     """)
 
     st.markdown("### Research Interests")
     st.markdown("""
-    - Computer Vision  
+    - Incomplete Multimodal Sentiment Analysis
     - High-Resolution Remote Sensing Image Classification  
     - Semantic Segmentation
     """)
