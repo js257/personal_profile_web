@@ -3,14 +3,14 @@ import webbrowser
 
 # 页面配置
 st.set_page_config(
-    page_title="陈俊松 (Junsong Chen) - 个人简介",
+    page_title="陈俊松 (Junsong Chen) - 个人主页",
     page_icon="👨‍💻",
     layout="wide"
 )
 
 # ---------------- 左侧栏 ----------------
 with st.sidebar:
-    st.image("Chen junsong.jpg", width=120)  # 本地头像
+    st.image("Chen junsong.jpg", width=120)  # 替换为你的本地头像
     st.markdown("## 陈俊松 (Junsong Chen)")
 
     st.markdown("### 教育背景")
@@ -33,7 +33,26 @@ with st.sidebar:
     st.markdown("[GitHub ★](https://github.com/username)")  # 替换为你的 GitHub
 
 # ---------------- 右侧内容 ----------------
-st.title("📄 Selected Publications")
+st.header("News")
+news = [
+    {"date": "2023.11", "content": "One paper has been accepted by TGRS (CCF Rank B)"},
+    {"date": "2023.04", "content": "One paper has been accepted by TGRS (CCF Rank B)"}
+]
+
+for item in news:
+    st.markdown(f"- [{item['date']}] {item['content']}")
+
+st.header("Awards")
+awards = [
+    {"date": "2023.11", "content": "I was awarded the National Scholarship."},
+    {"date": "2023.03", "content": "I was rated as an Excellent Graduate Student."},
+    {"date": "2018.11", "content": "I was awarded the National Inspirational Scholarship."}
+]
+
+for item in awards:
+    st.markdown(f"- [{item['date']}] {item['content']}")
+
+st.header("Selected Publications")
 st.markdown("(*: corresponding author, [C]: Conference, [J]: Journal.)")
 
 publications = [
@@ -44,7 +63,7 @@ publications = [
                 "info": "[J] Junsong Chen, Jizheng Yi*, Aibin Chen, Hui Lin. SRCBTFusion-Net: An efficient Fusion Architecture via Stacked Residual Convolution Blocks and Transformer for Remote Sensing Image Semantic Segmentation.",
                 "journal": "IEEE Transactions on Geoscience and Remote Sensing (TGRS).",
                 "details": "(CCF Rank B, IF=8.2, Accepted in Nov. 2023)",
-                "paper_url": "https://ieeexplore.ieee.org/document/XXXXXXX",  # 替换真实链接
+                "paper_url": "https://ieeexplore.ieee.org/document/XXXXXXX",
                 "code_url": "https://github.com/username/SRCBTFusion-Net"
             },
             {
@@ -85,9 +104,9 @@ for pub_year in publications:
         col1, col2 = st.columns([1, 1])
         if entry.get("paper_url"):
             with col1:
-                if st.button(f"[paper]", key=f"paper_{pub_year['year']}_{idx}"):
+                if st.button("[paper]", key=f"paper_{pub_year['year']}_{idx}"):
                     webbrowser.open(entry['paper_url'])
         if entry.get("code_url"):
             with col2:
-                if st.button(f"[Code]", key=f"code_{pub_year['year']}_{idx}"):
+                if st.button("[Code]", key=f"code_{pub_year['year']}_{idx}"):
                     webbrowser.open(entry['code_url'])
