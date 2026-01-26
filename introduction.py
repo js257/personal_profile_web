@@ -16,7 +16,7 @@ with st.sidebar:
     st.markdown("""
     - Bachelor (2021): Panzhihua University, Electronic Information Engineering  
     - Master (2024): Central South University of Forestry and Technology, School of Computer and Information Engineering
-    - Ph.D. (Ongoing): National University of Defense Technology, School of Computer Science
+    - Ph.D. (2025–Present): National University of Defense Technology, School of Computer Science
     """)
 
     st.markdown("### Research Interests")
@@ -35,6 +35,7 @@ with st.sidebar:
 # ---------------- Main Content ----------------
 st.header("News")
 news = [
+     {"date": "2025.11", "content": "One paper has been accepted by AAAI (CCF Rank A)"},
     {"date": "2023.11", "content": "One paper has been accepted by TGRS (CCF Rank B)"},
     {"date": "2023.04", "content": "One paper has been accepted by TGRS (CCF Rank B)"}
 ]
@@ -44,6 +45,8 @@ for item in news:
 
 st.header("Awards")
 awards = [
+    {"date": "2025.11", "content": "Outstanding Master's Thesis of Hunan Artificial Intelligence Society."},
+    {"date": "2024.5", "content": "Outstanding Graduate of Hunan Province."},
     {"date": "2023.11", "content": "Awarded the National Scholarship."},
     {"date": "2023.03", "content": "Rated as an Excellent Graduate Student."},
     {"date": "2018.11", "content": "Awarded the National Inspirational Scholarship."}
