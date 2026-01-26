@@ -10,7 +10,7 @@ st.set_page_config(
 
 # ---------------- 左侧栏 ----------------
 with st.sidebar:
-    st.image("avatar.jpg", width=120)  # 本地头像
+    st.image("Chen junsong.jpg", width=120)  # 本地头像
     st.markdown("## 陈俊松 (Junsong Chen)")
 
     st.markdown("### 教育背景")
