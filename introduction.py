@@ -1,38 +1,38 @@
 import streamlit as st
 import webbrowser
 
-# 页面配置
+# ---------------- Page Configuration ----------------
 st.set_page_config(
-    page_title="陈俊松 (Junsong Chen) - 个人主页",
+    page_title="Junsong Chen - Personal Profile",
     page_icon="👨‍💻",
     layout="wide"
 )
 
-# ---------------- 左侧栏 ----------------
+# ---------------- Sidebar ----------------
 with st.sidebar:
-    st.image("Chen junsong.jpg", width=120)  # 替换为你的本地头像
-    st.markdown("## 陈俊松 (Junsong Chen)")
+    st.image("Chen_junsong.jpg", width=120)  # Replace with your local photo
+    st.markdown("## Junsong Chen")
 
-    st.markdown("### 教育背景")
+    st.markdown("### Education")
     st.markdown("""
-    - 学士 (2021): 攀枝花大学 电子信息工程专业  
-    - 硕士 (在读): 中南林业科技大学 计算机与信息工程学院
+    - Bachelor (2021): Panzhihua University, Electronic Information Engineering  
+    - Master (Ongoing): Central South University of Forestry and Technology, School of Computer and Information Engineering
     """)
 
-    st.markdown("### 研究兴趣")
+    st.markdown("### Research Interests")
     st.markdown("""
-    - 计算机视觉  
-    - 高分辨率遥感图像分类  
-    - 语义分割
+    - Computer Vision  
+    - High-Resolution Remote Sensing Image Classification  
+    - Semantic Segmentation
     """)
 
-    st.markdown("### 联系方式")
+    st.markdown("### Contact")
     st.markdown("[📧 chenjunsong257@163.com](mailto:chenjunsong257@163.com)")
 
-    st.markdown("### 社交链接")
-    st.markdown("[GitHub ★](https://github.com/username)")  # 替换为你的 GitHub
+    st.markdown("### Social Links")
+    st.markdown("[GitHub ★](https://github.com/js257)")  # Replace with your GitHub
 
-# ---------------- 右侧内容 ----------------
+# ---------------- Main Content ----------------
 st.header("News")
 news = [
     {"date": "2023.11", "content": "One paper has been accepted by TGRS (CCF Rank B)"},
@@ -44,9 +44,9 @@ for item in news:
 
 st.header("Awards")
 awards = [
-    {"date": "2023.11", "content": "I was awarded the National Scholarship."},
-    {"date": "2023.03", "content": "I was rated as an Excellent Graduate Student."},
-    {"date": "2018.11", "content": "I was awarded the National Inspirational Scholarship."}
+    {"date": "2023.11", "content": "Awarded the National Scholarship."},
+    {"date": "2023.03", "content": "Rated as an Excellent Graduate Student."},
+    {"date": "2018.11", "content": "Awarded the National Inspirational Scholarship."}
 ]
 
 for item in awards:
@@ -62,22 +62,22 @@ publications = [
             {
                 "info": "[J] Junsong Chen, Jizheng Yi*, Aibin Chen, Hui Lin. SRCBTFusion-Net: An efficient Fusion Architecture via Stacked Residual Convolution Blocks and Transformer for Remote Sensing Image Semantic Segmentation.",
                 "journal": "IEEE Transactions on Geoscience and Remote Sensing (TGRS).",
-                "details": "(CCF Rank B, IF=8.2, Accepted in Nov. 2023)",
-                "paper_url": "https://ieeexplore.ieee.org/document/XXXXXXX",
-                "code_url": "https://github.com/username/SRCBTFusion-Net"
+                "details": "(CCF Rank B, IF=8.2, Accepted Nov 2023)",
+                "paper_url": "https://ieeexplore.ieee.org/document/10328787",
+                "code_url": "https://github.com/js257/SRCBTFusion-Net"
             },
             {
                 "info": "[J] Junsong Chen, Jizheng Yi*, Aibin Chen, Ke Yang, Ze Jin. SMFE‑Net: a saliency multi‑feature extraction framework for VHR remote sensing image classification.",
                 "journal": "Multimedia Tools and Applications.",
-                "details": "(CCF Rank C, IF=3.6, Accepted in May. 2023)",
-                "paper_url": "https://link.springer.com/article/XXXXXXX",
+                "details": "(CCF Rank C, IF=3.6, Accepted May 2023)",
+                "paper_url": "https://link.springer.com/article/10.1007/s11042-023-15759-2",
                 "code_url": None
             },
             {
                 "info": "[J] Junsong Chen, Jizheng Yi*, Aibin Chen, Ze Jin. EFCOMFF-Net: A Multiscale Feature Fusion Architecture With Enhanced Feature Correlation for Remote Sensing Image Scene Classification.",
                 "journal": "IEEE Transactions on Geoscience and Remote Sensing (TGRS).",
-                "details": "(CCF Rank B, IF=8.2, Accepted in Mar. 2023)",
-                "paper_url": "https://ieeexplore.ieee.org/document/YYYYYYY",
+                "details": "(CCF Rank B, IF=8.2, Accepted Mar 2023)",
+                "paper_url": "https://ieeexplore.ieee.org/abstract/document/10065518",
                 "code_url": None
             }
         ]
@@ -88,15 +88,15 @@ publications = [
             {
                 "info": "[J] Jizheng Yi*, Junsong Chen, Mengna Zhou, Chao Hou, Aibin Chen, Guoxiong Zhou. Analysis of stock market public opinion based on web crawler and deep learning technologies including 1DCNN and LSTM.",
                 "journal": "Arabian Journal for Science and Engineering.",
-                "details": "(IF=2.9, Accepted in Oct. 2022)",
-                "paper_url": "https://link.springer.com/article/ZZZZZZZ",
+                "details": "(IF=2.9, Accepted Oct 2022)",
+                "paper_url": "https://link.springer.com/article/10.1007/s13369-022-07444-7",
                 "code_url": None
             }
         ]
     }
 ]
 
-# 显示论文
+# ---------------- Display Publications ----------------
 for pub_year in publications:
     st.subheader(pub_year["year"])
     for idx, entry in enumerate(pub_year["entries"], 1):
