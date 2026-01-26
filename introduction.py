@@ -10,7 +10,7 @@ st.set_page_config(
 
 # ---------------- Sidebar ----------------
 with st.sidebar:
-    st.image("Chen_junsong.jpg", width=120)  # Replace with your local photo
+    st.image("Chen junsong.jpg", width=120)  # Replace with your local photo
     st.markdown("## Junsong Chen")
 
     st.markdown("### Education")
