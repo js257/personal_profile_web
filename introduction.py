@@ -1,5 +1,4 @@
 import streamlit as st
-import webbrowser
 
 # ---------------- Page Configuration ----------------
 st.set_page_config(
@@ -10,7 +9,7 @@ st.set_page_config(
 
 # ---------------- Sidebar ----------------
 with st.sidebar:
-    st.image("Chen junsong.jpg", width=120)  # Replace with your local photo
+    st.image("Chen junsong.jpg", width=120)  # 替换为你的本地照片
     st.markdown("## Junsong Chen")
 
     st.markdown("### Education")
@@ -30,7 +29,7 @@ with st.sidebar:
     st.markdown("[📧 chenjunsong257@163.com](mailto:chenjunsong257@163.com)")
 
     st.markdown("### Social Links")
-    st.markdown("[GitHub ★](https://github.com/js257)")  # Replace with your GitHub
+    st.markdown("[GitHub ★](https://github.com/js257)")  # 替换为你的 GitHub
 
 # ---------------- Main Content ----------------
 st.header("News")
@@ -96,17 +95,16 @@ publications = [
     }
 ]
 
-# ---------------- Display Publications ----------------
+# ---------------- Display Publications with blue clickable links ----------------
 for pub_year in publications:
     st.subheader(pub_year["year"])
     for idx, entry in enumerate(pub_year["entries"], 1):
-        st.markdown(f"{idx}. {entry['info']}  {entry['journal']}  {entry['details']}")
-        col1, col2 = st.columns([1, 1])
-        if entry.get("paper_url"):
-            with col1:
-                if st.button("[paper]", key=f"paper_{pub_year['year']}_{idx}"):
-                    webbrowser.open(entry['paper_url'])
-        if entry.get("code_url"):
-            with col2:
-                if st.button("[Code]", key=f"code_{pub_year['year']}_{idx}"):
-                    webbrowser.open(entry['code_url'])
+        # 构建蓝色可点击的链接
+        paper_link = f"<a href='{entry['paper_url']}' target='_blank' style='color:blue'>[Paper]</a>" if entry.get("paper_url") else ""
+        code_link = f"<a href='{entry['code_url']}' target='_blank' style='color:blue'>[Code]</a>" if entry.get("code_url") else ""
+
+        # 显示论文信息 + 链接
+        st.markdown(
+            f"{idx}. {entry['info']}  {entry['journal']}  {entry['details']} {paper_link} {code_link}",
+            unsafe_allow_html=True
+        )
