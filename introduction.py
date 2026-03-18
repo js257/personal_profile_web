@@ -60,24 +60,34 @@ st.markdown("(*: corresponding author, [C]: Conference, [J]: Journal.)")
 
 publications = [
     {
+        "year": "2025",
+        "entries": [
+                {
+                "info": "[C] **Junsong Chen**, Jiyuan Liu*, Suyuan Liu, Wei Zhang, Ao Li2*, En Zhu*, Xinwang Liu. Sample-specific Modality Diagnosis and Cross-modal Enhancement for Incomplete Multimodal Representations.",
+                "Conference": "AAAI Conference on Artificial Intelligence (AAAI).",
+                "details": "(CCF Rank A,  Accepted Nov 2025)",
+                "paper_url": "",
+                "code_url": ""
+                }
+        ]
         "year": "2023",
         "entries": [
             {
-                "info": "[J] Junsong Chen, Jizheng Yi*, Aibin Chen, Hui Lin. SRCBTFusion-Net: An efficient Fusion Architecture via Stacked Residual Convolution Blocks and Transformer for Remote Sensing Image Semantic Segmentation.",
+                "info": "[J] **Junsong Chen**, Jizheng Yi*, Aibin Chen, Hui Lin. SRCBTFusion-Net: An efficient Fusion Architecture via Stacked Residual Convolution Blocks and Transformer for Remote Sensing Image Semantic Segmentation.",
                 "journal": "IEEE Transactions on Geoscience and Remote Sensing (TGRS).",
                 "details": "(CCF Rank B, IF=8.2, Accepted Nov 2023)",
                 "paper_url": "https://ieeexplore.ieee.org/document/10328787",
                 "code_url": "https://github.com/js257/SRCBTFusion-Net"
             },
             {
-                "info": "[J] Junsong Chen, Jizheng Yi*, Aibin Chen, Ke Yang, Ze Jin. SMFE‑Net: a saliency multi‑feature extraction framework for VHR remote sensing image classification.",
+                "info": "[J] **Junsong Chen**, Jizheng Yi*, Aibin Chen, Ke Yang, Ze Jin. SMFE‑Net: a saliency multi‑feature extraction framework for VHR remote sensing image classification.",
                 "journal": "Multimedia Tools and Applications.",
                 "details": "(CCF Rank C, IF=3.6, Accepted May 2023)",
                 "paper_url": "https://link.springer.com/article/10.1007/s11042-023-15759-2",
                 "code_url": None
             },
             {
-                "info": "[J] Junsong Chen, Jizheng Yi*, Aibin Chen, Ze Jin. EFCOMFF-Net: A Multiscale Feature Fusion Architecture With Enhanced Feature Correlation for Remote Sensing Image Scene Classification.",
+                "info": "[J] **Junsong Chen**, Jizheng Yi*, Aibin Chen, Ze Jin. EFCOMFF-Net: A Multiscale Feature Fusion Architecture With Enhanced Feature Correlation for Remote Sensing Image Scene Classification.",
                 "journal": "IEEE Transactions on Geoscience and Remote Sensing (TGRS).",
                 "details": "(CCF Rank B, IF=8.2, Accepted Mar 2023)",
                 "paper_url": "https://ieeexplore.ieee.org/abstract/document/10065518",
@@ -89,7 +99,7 @@ publications = [
         "year": "2022",
         "entries": [
             {
-                "info": "[J] Jizheng Yi*, Junsong Chen, Mengna Zhou, Chao Hou, Aibin Chen, Guoxiong Zhou. Analysis of stock market public opinion based on web crawler and deep learning technologies including 1DCNN and LSTM.",
+                "info": "[J] Jizheng Yi*, **Junsong Chen**, Mengna Zhou, Chao Hou, Aibin Chen, Guoxiong Zhou. Analysis of stock market public opinion based on web crawler and deep learning technologies including 1DCNN and LSTM.",
                 "journal": "Arabian Journal for Science and Engineering.",
                 "details": "(IF=2.9, Accepted Oct 2022)",
                 "paper_url": "https://link.springer.com/article/10.1007/s13369-022-07444-7",
