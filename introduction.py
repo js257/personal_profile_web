@@ -59,18 +59,7 @@ st.header("Selected Publications")
 st.markdown("(*: corresponding author, [C]: Conference, [J]: Journal.)")
 
 publications = [
-        {
-        "year": "2025",
-        "entries": [
-                {
-                "info": "[C] **Junsong Chen**, Jiyuan Liu*, Suyuan Liu, Wei Zhang, Ao Li2*, En Zhu*, Xinwang Liu. Sample-specific Modality Diagnosis and Cross-modal Enhancement for Incomplete Multimodal Representations.",
-                "Conference": "AAAI Conference on Artificial Intelligence (AAAI).",
-                "details": "(CCF Rank A,  Accepted Nov 2025)",
-                "paper_url": "",
-                "code_url": ""
-                }
-          ]
-        },
+       
         {
         "year": "2023",
         "entries": [
