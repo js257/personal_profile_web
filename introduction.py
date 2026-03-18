@@ -117,6 +117,6 @@ for pub_year in publications:
 
         # 显示论文信息 + 链接
         st.markdown(
-            f"{idx}. {entry['info']}  {entry['journal']}  {entry['details']} {paper_link} {code_link}",
+            f"{idx}. {entry['info']}  {entry["journal"]) or entry["Conference"] }  {entry['details']} {paper_link} {code_link}",
             unsafe_allow_html=True
         )
