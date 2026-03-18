@@ -110,13 +110,21 @@ publications = [
 # ---------------- Display Publications with blue clickable links ----------------
 for pub_year in publications:
     st.subheader(pub_year["year"])
+    
     for idx, entry in enumerate(pub_year["entries"], 1):
-        # 构建蓝色可点击的链接
-        paper_link = f"<a href='{entry['paper_url']}' target='_blank' style='color:blue'>[Paper]</a>" if entry.get("paper_url") else ""
-        code_link = f"<a href='{entry['code_url']}' target='_blank' style='color:blue'>[Code]</a>" if entry.get("code_url") else ""
-
-        # 显示论文信息 + 链接
+        # 统一期刊/会议字段
+        venue = entry.get("journal") or entry.get("Conference") or ""
+        
+        # 获取链接
+        paper_url = entry.get("paper_url")
+        code_url = entry.get("code_url")
+        
+        # 构建蓝色链接
+        paper_link = f"<a href='{paper_url}' target='_blank' style='color:blue'>[Paper]</a>" if paper_url else ""
+        code_link = f"<a href='{code_url}' target='_blank' style='color:blue'>[Code]</a>" if code_url else ""
+        
+        # 显示
         st.markdown(
-            f"{idx}. {entry['info']}  {entry["journal"]) or entry["Conference"] }  {entry['details']} {paper_link} {code_link}",
+            f"{idx}. {entry.get('info','')}  {venue}  {entry.get('details','')} {paper_link} &nbsp; {code_link}",
             unsafe_allow_html=True
         )
