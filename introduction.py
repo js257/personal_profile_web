@@ -58,7 +58,7 @@ for item in awards:
 st.header("Selected Publications")
 st.markdown("(*: corresponding author, [C]: Conference, [J]: Journal.)")
 
-publications = 
+publications = [
         {
         "year": "2025",
         "entries": [
