@@ -62,7 +62,7 @@ publications = [
            { "year": "2025", 
             "entries": [ 
                 { "info": "[C] **Junsong Chen**, Jiyuan Liu*, Suyuan Liu, Wei Zhang, Ao Li*, En Zhu*, Xinwang Liu. Sample-specific Modality Diagnosis and Cross-modal Enhancement for Incomplete Multimodal Representations.", 
-                   "Conference": "AAAI Conference on Artificial Intelligence (AAAI).", 
+                   "Conference": "Proceedings of the 40th AAAI Conference on Artificial Intelligence (AAAI-26).", 
                    "details": "(CCF Rank A, Accepted Nov 2025)", 
                    "paper_url": "", "code_url": "" } 
                 ] 
