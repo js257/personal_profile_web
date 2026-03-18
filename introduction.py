@@ -70,7 +70,7 @@ publications =
                 "code_url": ""
                 }
           ]
-        }，
+        },
         {
         "year": "2023",
         "entries": [
