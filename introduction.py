@@ -16,7 +16,7 @@ with st.sidebar:
     st.markdown("""
     - Bachelor (2021): Panzhihua University, Electronic Information Engineering  
     - Master (2024): Central South University of Forestry and Technology, School of Computer and Information Engineering
-    - Ph.D. (2025–Present): National University of Defense Technology, School of Computer Science
+    - Ph.D. (2024.9–Present): National University of Defense Technology, School of Computer Science
     """)
 
     st.markdown("### Research Interests")
